@@ -1,0 +1,25 @@
+{
+  "name": "jest",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Svetlana Naumovich <svetlana.herissonn@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.28.3",
+    "@babel/core": "^7.28.3",
+    "@babel/preset-env": "^7.28.3",
+    "eslint": "^9.33.0",
+    "jest": "^30.0.5",
+    "jest-babel": "^1.0.1"
+  },
+  "dependencies": {
+    "core-js": "^3.45.0"
+  }
+}
