@@ -3,16 +3,16 @@ stack: node:12       # окружение
 
 branches:
   only:               # ветки, которые будут собираться
-    - main           # ветка GitHub
+    -main           # ветка GitHub
 
 cache:               # кеширование
   directories:
-    - node_modules   # кеширование папки с зависимостями
+    -node_modules   # кеширование папки с зависимостями
 
 install:
-  - npm install      # команда установки зависимостей
+  -npm install      # команда установки зависимостей
 
 build: off           # отключение сборки (если не требуется)
 
 test_scripts: 
-  - npm run lint && npm test  # скрипт тестирования
+  -npm run lint && npm test  # скрипт тестирования
