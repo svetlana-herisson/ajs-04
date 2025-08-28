@@ -1,13 +1,18 @@
 image: ubuntu:18.04  # образ для сборки
 stack: node:12       # окружение
+
 branches:
-  only:
+  only:               # ветки, которые будут собираться
     - main           # ветка GitHub
+
 cache:               # кеширование
   directories:
     - node_modules   # кеширование папки с зависимостями
+
 install:
   - npm install      # команда установки зависимостей
+
 build: off           # отключение сборки (если не требуется)
+
 test_scripts: 
   - npm run lint && npm test  # скрипт тестирования
