@@ -9,4 +9,4 @@ install:
   - npm install      # команда установки зависимостей
 build: off           # отключение сборки (если не требуется)
 test_scripts: 
-  - npm run lint && npm test  # скрипт тестирования
+  - npm run lint && npm run test  # скрипт тестирования

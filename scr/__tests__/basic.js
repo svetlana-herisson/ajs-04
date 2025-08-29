@@ -2,7 +2,7 @@
                         // work - функция какой-то работы
 
 test('basic test', () => {
-    let result = 4;
+    const result = 4;
     expect(result).toBe(4); // expect - функция для сравнения значений друг с другом
 });
 
