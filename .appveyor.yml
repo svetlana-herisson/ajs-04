@@ -1,8 +1,7 @@
 version: 1.0.{build}
 image: Visual Studio Code
 stack: node 12       # окружение
-branches:
-  only:               # ветки, которые будут собираться
+branches.only:               # ветки, которые будут собираться
     - main           # ветка GitHub
 cache: node_modules   # кеширование папки с зависимостями
 install:
