@@ -1,5 +1,4 @@
-version: 1.0.{build}
-image: Visual Studio Code
+image: Ubuntu1804
 stack: node 12       # окружение
 branches:
   only:               # ветки, которые будут собираться
