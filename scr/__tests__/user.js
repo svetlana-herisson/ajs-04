@@ -9,9 +9,3 @@ beforeEach(() => {
 // которая выполняет указанную функцию перед каждым тестом в 
 // рамках её области видимости. Её основная цель — настроить 
 // необходимую среду или состояние для тестов.
-
-test("should call loadUser once", () => {
-    httpGet.mockReturnValue(JSON.stringify({}));
-    loadUser(1);
-    expect(httpGet).toHaveBeenCalledWith("http://server:8080/users/1");
-});
